@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Paradise | Luxury Stay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">HOTEL <span>PARADISE</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#booking" class="btn-gold">Book Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Experience Luxury & Comfort</h1>
+            <p>Where elegance meets tranquility in the heart of the city.</p>
+            <a href="#rooms" class="btn-main">Explore Rooms</a>
+        </div>
+    </header>
+
+    <section id="rooms" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Premium Suites</h2>
+            <div class="room-grid">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800" alt="Deluxe Room">
+                    <div class="room-info">
+                        <h3>Deluxe Room</h3>
+                        <p class="price">$150 <span>/ Night</span></p>
+                        <ul>
+                            <li><i class="fas fa-wifi"></i> Free WiFi</li>
+                            <li><i class="fas fa-snowflake"></i> AC</li>
+                            <li><i class="fas fa-tv"></i> Smart TV</li>
+                        </ul>
+                        <button class="btn-book">Select Room</button>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800" alt="Executive Suite">
+                    <div class="room-info">
+                        <h3>Executive Suite</h3>
+                        <p class="price">$350 <span>/ Night</span></p>
+                        <ul>
+                            <li><i class="fas fa-wifi"></i> Free WiFi</li>
+                            <li><i class="fas fa-swimming-pool"></i> Private Pool</li>
+                            <li><i class="fas fa-wine-glass"></i> Mini Bar</li>
+                        </ul>
+                        <button class="btn-book">Select Room</button>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800" alt="Standard Room">
+                    <div class="room-info">
+                        <h3>Standard Room</h3>
+                        <p class="price">$100 <span>/ Night</span></p>
+                        <ul>
+                            <li><i class="fas fa-wifi"></i> Free WiFi</li>
+                            <li><i class="fas fa-coffee"></i> Breakfast</li>
+                            <li><i class="fas fa-tv"></i> Smart TV</li>
+                        </ul>
+                        <button class="btn-book">Select Room</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="section booking-section">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-text">
+                    <h2>Reserve Your Stay</h2>
+                    <p>Fill in the details and we will get back to you with confirmation within 24 hours.</p>
+                </div>
+                <form id="bookingForm" class="booking-form">
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="Full Name" required>
+                        <input type="email" id="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="date" id="checkin" required>
+                        <input type="date" id="checkout" required>
+                    </div>
+                    <select id="guests">
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3+ Guests</option>
+                    </select>
+                    <button type="submit" class="btn-main">Confirm Booking</button>
+                </form>
+                <div id="formFeedback" class="hidden"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>Hotel Paradise</h3>
+                <p>123 Luxury Ave, Ocean Drive, FL</p>
+                <p>+1 234 567 890</p>
+            </div>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 Hotel Paradise. All Rights Reserved.</p>
+    </footer>
+
+    <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
